@@ -1,1 +1,25 @@
+/* 头像：圆形 + 光标悬停翻转 */
+.site-author-image
+  width: 120px
+  height: 120px
+  border-radius: 50%
+  object-fit: cover
+  transition: transform .8s ease, box-shadow .3s ease
+  transform-style: preserve-3d
+  backface-visibility: hidden
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .15)
+
+.site-author-image:hover
+  transform: rotateY(180deg)
+  box-shadow: 0 6px 16px rgba(0, 0, 0, .25)
+
+/* 评论区：尽量屏蔽 LiveRe 广告元素，不影响主体评论 */
+#lv-container [id*="ad"],
+#lv-container [class*="ad-"],
+#lv-container [class*="ads"],
+#lv-container iframe[src*="ad"],
+#lv-container iframe[src*="doubleclick"],
+#lv-container iframe[src*="googlesyndication"]
+  display: none !important
+
 // Custom styles.
