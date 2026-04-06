@@ -7,7 +7,6 @@
 
 {# 动态特效（点击爱心 + 背景粒子） #}
 <script src="/js/src/love.js"></script>
-<script src="/js/src/dynamic_bg.js"></script>
 
 {# Live2D 挂件 #}
 <script src="/live2dw/lib/L2Dwidget.min.js"></script>
