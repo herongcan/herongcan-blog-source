@@ -101,6 +101,24 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: landscape
 
+# SEO / Feed / Search
+sitemap:
+  path: sitemap.xml
+
+baidusitemap:
+  path: baidusitemap.xml
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
