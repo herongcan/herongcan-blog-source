@@ -37,6 +37,10 @@ favicon:
 # Set default keywords (Use a comma to separate)
 keywords: "Hexo, NexT"
 
+# Sidebar author info (used by NexT sidebar template)
+author: HeRongCan
+description: 一川月白寒光碎
+
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
@@ -92,13 +96,13 @@ index_with_subtitle: false
 # Value before `||` delimeter is the target link.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
-  home: / || home
-  tags: /tags/ || tags
-  categories: /categories/ || th
-  archives: /archives/ || archive
-  sitemap: /sitemap.xml || sitemap
-  photos: /photos/ || camera-retro
-  project: /data-platform-project.html || database
+  home: /
+  tags: /tags/
+  categories: /categories/
+  archives: /archives/
+  sitemap: /sitemap.xml
+  photos: /photos/
+  project: /data-platform-project.html
 
 # Enable/Disable menu icons.
 menu_icons:
@@ -153,7 +157,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+avatar: /images/touxiang.png
 
 # Table Of Contents in the Sidebar
 toc:
@@ -394,7 +398,7 @@ valine:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC8zOTk3MC8xNjQ5Nw==
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
