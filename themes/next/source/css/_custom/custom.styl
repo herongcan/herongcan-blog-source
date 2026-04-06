@@ -29,4 +29,21 @@
 #lv-container iframe[src*="googlesyndication"]
   display: none !important
 
+// Pisces：桌面端让主栏随视口变宽（上限约 1580px），正文区约为「主栏 − 侧栏 − 间距」
+// 解决仅改变量时大屏上观感变化不明显的问题
+@media (min-width: 992px)
+  .header
+    width: s('min(100vw - 40px, 1580px)') !important
+  .header-inner
+    width: 100% !important
+    max-width: 100% !important
+  .container .main-inner
+    width: s('min(100vw - 40px, 1580px)') !important
+  .footer-inner
+    width: s('min(100vw - 40px, 1580px)') !important
+  .content-wrap
+    width: s('calc(100% - 260px)') !important
+    max-width: 1320px
+    box-sizing: border-box
+
 // Custom styles.
