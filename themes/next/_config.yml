@@ -102,7 +102,6 @@ menu:
   archives: /archives/
   sitemap: /sitemap.xml
   photos: /photos/
-  project: /data-platform-project.html
 
 # Enable/Disable menu icons.
 menu_icons:

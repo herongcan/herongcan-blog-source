@@ -1,8 +1,11 @@
 ---
 title: 数据平台项目
 date: 2026-04-07 20:00:00
-layout: page
-permalink: data-platform-project.html
+tags:
+  - 技术
+  - 微服务
+categories:
+  - 其他
 description: YXD数据平台项目经验：基于DDD与Spring Cloud的企业级微服务数据平台。
 ---
 
