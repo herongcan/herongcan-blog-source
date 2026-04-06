@@ -1,6 +1,7 @@
 # Hexo Source Repository (Migrated)
 
-该目录是 `herongcan.github.io` 的 Hexo 源码工作区，用于替代直接手改静态 HTML。
+本仓库为独立 Git 项目，路径：`/Users/herc/IdeaProjects/herongcan-blog-source`。  
+通过 `hexo deploy` 将生成产物发布到 `herongcan/herongcan.github.io`（静态站点），不再与发布仓混在同一目录。
 
 ## 环境要求
 
