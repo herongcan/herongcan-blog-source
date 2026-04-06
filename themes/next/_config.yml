@@ -398,7 +398,14 @@ valine:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: MTAyMC8zOTk3MC8xNjQ5Nw==
+livere_uid:
+
+# Utterances (ad-free comments based on GitHub Issues)
+utterances:
+  enable: true
+  repo: herongcan/herongcan-blog-source
+  issue_term: pathname
+  theme: github-light
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/

@@ -43,32 +43,6 @@
 <script src="/static/api/js/share.js"></script>
 {% endif %}
 
-{# 评论区去广告：监听并清理常见推广节点 #}
-<script>
-  (function () {
-    function cleanCommentAds() {
-      var root = document.getElementById('lv-container');
-      if (!root) return;
-      var selectors = [
-        '[id*="ad"]',
-        '[class*="ad-"]',
-        '[class*="ads"]',
-        'iframe[src*="ad"]',
-        'iframe[src*="doubleclick"]',
-        'iframe[src*="googlesyndication"]'
-      ];
-      root.querySelectorAll(selectors.join(',')).forEach(function (el) {
-        el.style.display = 'none';
-      });
-    }
-    document.addEventListener('DOMContentLoaded', cleanCommentAds);
-    var observer = new MutationObserver(cleanCommentAds);
-    document.addEventListener('DOMContentLoaded', function () {
-      var root = document.getElementById('lv-container');
-      if (root) observer.observe(root, { childList: true, subtree: true });
-    });
-  })();
-</script>
 {#
 Custom head.
 #}

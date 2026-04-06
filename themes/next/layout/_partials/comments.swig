@@ -42,7 +42,18 @@
       <div id="uyan_frame"></div>
     </div>
 
-  {% elseif theme.livere_uid %}
+  {% elseif theme.utterances and theme.utterances.enable and theme.utterances.repo %}
+    <div class="comments" id="comments">
+      <script src="https://utteranc.es/client.js"
+              repo="{{ theme.utterances.repo }}"
+              issue-term="{{ theme.utterances.issue_term | default('pathname') }}"
+              theme="{{ theme.utterances.theme | default('github-light') }}"
+              crossorigin="anonymous"
+              async>
+      </script>
+    </div>
+
+  {% elseif theme.livere_uid and (theme.livere_uid | trim) %}
     <div class="comments" id="comments">
       <div id="lv-container" data-id="city" data-uid="{{ theme.livere_uid }}"></div>
     </div>
